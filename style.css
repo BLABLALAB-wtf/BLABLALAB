@@ -115,7 +115,7 @@ footer{
     padding: 1em;
 }
 
-a{
+footer a, main .projetos .projeto:hover a{
     color: white;
     text-decoration: underline;
 }
