@@ -74,15 +74,10 @@ main .projetos .projeto {
     flex: 1;
     text-align: center;
     cursor: pointer;
-    gap: 1em;
+
    padding: 2em;
 }
 
-
-main .projetos .projeto:hover{
-    background-color: black;
-    color: white;
-}
 
 main .projeto-descricao {
     display: none;
@@ -94,13 +89,19 @@ main  .aparece-projeto {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    gap: 1em;
     flex: 1;
     text-align: center;
     cursor: pointer;
     padding: 0.5em;
 }
 
+/* main .pannels:has(> div.bg1)  */
+main .projeto:has(>.aparece-projeto){
+    background-color: black;
+    color: white;
+    border-color: white;
+}
 main .sobre {
     text-align: center;
     padding: 2em;
@@ -116,10 +117,20 @@ footer{
     padding: 1em;
 }
 
-footer a, main .projetos .projeto:hover a{
+footer a{
     color: white;
     text-decoration: underline;
 }
+
+main .status {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+
+
+
 
 @media screen and (max-width:700px){
     header .logo {
