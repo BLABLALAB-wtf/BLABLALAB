@@ -111,21 +111,26 @@ main .sobre {
 }
 
 footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: black;
     text-align: center;
     color: white;
     padding: 1em;
+    min-height: 10vh;
+    gap: 0.4em;
 }
 
-footer a{
+footer a, main  a{
     color: white;
     text-decoration: underline;
 }
 
 main .status {
-    width: 5px;
-    height: 5px;
+    border: 1px solid white;
     border-radius: 5px;
+    padding: 1em;
 }
 
 
