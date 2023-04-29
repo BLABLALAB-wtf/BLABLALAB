@@ -1,5 +1,5 @@
 
-alert('Qual é, não julga não! Estamos em construção!');
+alert('Sem julgamentos, belê?! Ainda tamo construindo.');
 let projeto = document.querySelectorAll('.projeto')
 
 projeto.forEach((projeto) => {
