@@ -75,8 +75,9 @@ main .projetos .projeto {
     flex: 1;
     text-align: center;
     cursor: pointer;
+    width: 100%;
 
-   padding: 2em;
+   padding: 2em 4em;
 }
 
 
@@ -129,15 +130,29 @@ footer a, main  a{
 }
 
 main .status {
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 5px;
+    color: black;
     padding: 1em;
 }
 
 
+main .projeto:has(>.aparece-projeto) .status{
 
+    color: white;
+    border-color: white;
+}
 
-
+main .projeto-texto {
+    width:100%;
+}
+main .projeto-texto-status {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
 @media screen and (max-width:700px){
     header .logo {
        width: 40vw;
