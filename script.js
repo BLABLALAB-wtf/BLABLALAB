@@ -1,5 +1,5 @@
 
-alert('Sem julgamentos, viu?! Ainda tamo construindo.');
+setTimeout(alert('Sem julgamentos, viu?! Ainda tamo construindo.'), 2000)
 let projeto = document.querySelectorAll('.projeto')
 
 projeto.forEach((projeto) => {
