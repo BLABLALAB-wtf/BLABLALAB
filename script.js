@@ -6,6 +6,7 @@ function alerta(){
 
 setTimeout(alerta,1000)
 
+let projeto = document.querySelectorAll('.projeto')
 projeto.forEach((projeto) => {
     let descricao = projeto.querySelector('.projeto-descricao')
     projeto.addEventListener('click', () => {
